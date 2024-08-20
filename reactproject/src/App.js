@@ -1,12 +1,17 @@
 import React from 'react';
-//import ff from './components/welcome';
-import Welcome from './components/Welcome';
+// // import Sample from './components/Sample';
+// import Greetings from './components/Greetings';
+// import Welcome from './components/Welcome';
+// import TwoWay from './components/TwoWay';
+// import ConditionalRendering from './components/ToggleLogin';
+// import Department from './components/Department';
+import Muidemo from './components/Muidemo';
 
-function App(){
+const App=()=>{
   return(
     <div>
-      <Welcome />
-    </div>
+      <Muidemo />
+   </div>
   )
 }
 export default App;
