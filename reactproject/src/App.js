@@ -5,12 +5,15 @@ import React from 'react';
 // import TwoWay from './components/TwoWay';
 // import ConditionalRendering from './components/ToggleLogin';
 // import Department from './components/Department';
-import Muidemo from './components/Muidemo';
+// import Muidemo from './components/Muidemo';
+import List from './components/ListRendering';
+// import './App.css';
+
 
 const App=()=>{
   return(
-    <div>
-      <Muidemo />
+    <div className='App-logo'>
+      <List />
    </div>
   )
 }
