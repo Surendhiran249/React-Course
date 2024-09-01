@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Typography, TextField, Button, Grid, Card, IconButton } from '@mui/material';
 import { CreditCard, AccountBalance, Google, Apple, ArrowForward } from '@mui/icons-material';
 import { styled } from '@mui/system';
+import Navbar from './Navbar';
 
 const UpiOption = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -31,11 +32,13 @@ function Payment() {
 
   return (
     <div>
+      <Navbar />
+      <div>
       <Typography variant="h4" sx={{ padding: 2 }}>
         Payment
       </Typography>
       <Typography variant="h6" sx={{ padding: 2 }}>
-        Total Amount: ${totalAmount}
+        Total Amount: ₹{totalAmount}
       </Typography>
 
       <Grid container spacing={2} sx={{ padding: 2 }}>
@@ -68,8 +71,8 @@ function Payment() {
             sx={{ marginBottom: 2 }}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+        <Grid item xs={10} sm={5}>
+          <Typography variant="h6" sx={{ marginBottom: 1 }}>
             Choose UPI Option
           </Typography>
           <UpiOption>
@@ -105,8 +108,9 @@ function Payment() {
         onClick={handlePayment}
         endIcon={<ArrowForward />}
       >
-        Proceed to Pay ${totalAmount}
+        Proceed to Pay ₹{totalAmount}
       </Button>
+    </div>
     </div>
   );
 }

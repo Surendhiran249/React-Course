@@ -1,0 +1,52 @@
+/* ContactUs.css */
+
+.contact-container {
+    padding: 40px 20px;
+    background-color: #f7f9fa;
+  }
+  
+  .contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .contact-description {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #34495e;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-card {
+    margin-bottom: 20px;
+    border: 2px solid #2ecc71;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact-form-title {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .contact-input {
+    margin-bottom: 15px;
+  }
+  
+  .contact-submit-button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2ecc71;
+  }
+  
+  .contact-submit-button:hover {
+    background-color: #27ae60;
+  }
+  
