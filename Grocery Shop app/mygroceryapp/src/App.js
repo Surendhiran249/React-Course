@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Components/Login';
+import Signup from './Components/Signup';
 import Homepage from './Components/Homepage';
 import Cart from './Components/Cart';
 import Payment from './Components/Payment';
@@ -41,7 +42,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/Homepage" element={<Homepage onAddToCart={handleAddToCart} />} />
       </Routes>
       <Routes>

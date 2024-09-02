@@ -8,18 +8,18 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     // Add login functionality here
     console.log('Login button clicked');
-      navigate('/Homepage');
-    
+    navigate('/homepage');
   };
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    // Add sign up functionality here
-    console.log('Sign up button clicked');
+    // Navigate to the signup page
+    navigate('/');
   };
 
   const handleForgotPassword = (e) => {
@@ -68,7 +68,7 @@ const Login = () => {
         )}
         <p className="new-user">
           New User?{' '}
-          <a href="#" className="sign-up" onClick={() => setIsLogin(false)}>
+          <a href="#" className="sign-up" onClick={handleSignUp}>
             Sign Up
           </a>
         </p>

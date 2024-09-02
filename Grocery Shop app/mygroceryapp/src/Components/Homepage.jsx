@@ -18,16 +18,16 @@ function Homepage({ onAddToCart }) {
     { id: 8, name: 'Healthy Dried Blueberry (200g)', price: 560, image: 'https://m.media-amazon.com/images/I/41yneT3mZ0L._SX522_.jpg' },
     { id: 9, name: 'Pomegranate Anar Seeds Organic 1kg', price: 145, image: 'https://m.media-amazon.com/images/I/51S2Kmhr5xL._AC_UL480_FMwebp_QL65_.jpg' },
     { id: 10, name: 'Premium Dried Fruits (Strawberry, 200g)', price: 200, image: 'https://www.health.com/thmb/zvfL1rCWAPg3XzidfAqURuCmttk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Strawberries-c5f434e7729e47c5b32c0deaa029386c.jpg' },
-    { id: 11, name: 'Avocado', price: 220, image: 'https://m.media-amazon.com/images/I/51A6h6xuZkL._AC_SY450_.jpg' },
-    { id: 12, name: 'Pineapple', price: 160, image: 'https://m.media-amazon.com/images/I/61oELMW4JYL._AC_SY450_.jpg' },
-    { id: 13, name: 'Grapes', price: 120, image: 'https://m.media-amazon.com/images/I/61txdfZ7cyL._AC_SY450_.jpg' },
-    { id: 14, name: 'Kiwi', price: 90, image: 'https://m.media-amazon.com/images/I/61KABjA2peL._AC_SY450_.jpg' },
-    { id: 15, name: 'Blueberries', price: 350, image: 'https://m.media-amazon.com/images/I/61v8dZdjU2L._AC_SY450_.jpg' },
-    { id: 16, name: 'Strawberries', price: 250, image: 'https://m.media-amazon.com/images/I/61zb8uhy4tL._AC_SY450_.jpg' },
-    { id: 17, name: 'Watermelon', price: 550, image: 'https://m.media-amazon.com/images/I/61x3tk+m3BL._AC_SY450_.jpg' },
-    { id: 18, name: 'Mango', price: 200, image: 'https://m.media-amazon.com/images/I/71Gq2OjDLlL._AC_SY450_.jpg' },
-    { id: 19, name: 'Cherries', price: 400, image: 'https://m.media-amazon.com/images/I/61NUEx0pDsL._AC_SY450_.jpg' },
-    { id: 20, name: 'Raspberries', price: 300, image: 'https://m.media-amazon.com/images/I/61tZfCFTNwL._AC_SY450_.jpg' }
+    { id: 11, name: 'Avocado', price: 220, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCGedvavzdQnv2kpffyT2IZ3Alj60da4cJw&s' },
+    { id: 12, name: 'Pineapple', price: 160, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCG2TLJjRBh1ijYajFux8X2f32Yz_S0wYVQ&s' },
+    { id: 13, name: 'Grapes', price: 120, image: 'https://nativeindianorganics.com/wp-content/uploads/2023/07/green-grapes.jpg' },
+    { id: 14, name: 'Kiwi', price: 90, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrE1p9xNBXToyhlx53v1Mx7wlaFKkbS4z0-A&s' },
+    { id: 15, name: 'Blueberries', price: 350, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgxAumUBt_fQ38H5fCd6W8yHQgUszAhWeWng&s' },
+    { id: 16, name: 'Chocolate', price: 250, image: 'https://www.coldlove.in/cdn/shop/files/Healthy-AF-calories-mentioned_SFChoc1200x1200_68f36071-594f-4896-a072-fa380b5204cf.jpg?v=1723026075&width=1445' },
+    { id: 17, name: 'Watermelon', price: 550, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaZMefppM4pi-ygzOHTbInC84pjJF2bEJWXw&s' },
+    { id: 18, name: 'Mango', price: 200, image: 'https://draxe.com/wp-content/uploads/2019/04/DrAxeMangoNutritionFB.jpg' },
+    { id: 19, name: 'Cherries', price: 400, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1dGinfC7vIjQoBbZBCNYbSS2_3pKy7wHkA&s' },
+    { id: 20, name: 'Raspberries', price: 300, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReWPuQA-aaHdlRrC6z6wGMKXJvKGxoGTH8Yw&s' }
   ]);
   
   const [searchTerm, setSearchTerm] = useState('');
