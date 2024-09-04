@@ -64,7 +64,7 @@ function Payment() {
             }}
           />
           <TextField
-            label="PIN"
+            label="OTP"
             variant="outlined"
             fullWidth
             type="password"
