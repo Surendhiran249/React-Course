@@ -17,14 +17,15 @@ const FruitSurvey = () => {
   };
 
   return (<>
-  <h1>Enter Your name Favourite fruit : </h1>
+  <h1><code>Enter Your name Favourite fruit : </code></h1>
     <form onSubmit={handleSubmit}>
       <TextField
         label="Name"
-        variant="outlined"
+        variant="filled"
         value={name}
         onChange={(event) => setName(event.target.value)}
         data-testid="name"
+        style={{background :  'white',borderRadius:'4px', }}
       />
       <Autocomplete
         options={['Apple', 'Banana', 'Cherry', 'Durian', 'Elderberry']}
@@ -33,8 +34,9 @@ const FruitSurvey = () => {
           <TextField
             {...params}
             label="Favorite Fruit"
-            variant="outlined"
+            variant="filled"
             data-testid="autocomplete"
+            style={{background :  'white',borderRadius:'4px' }}
           />
         )}
         value={favoriteFruit}
@@ -44,6 +46,7 @@ const FruitSurvey = () => {
         variant="contained"
         color="primary"
         type="submit"
+        sx={{margin:'5px 0px'}}
         data-testid="button"
       >
         Submit

@@ -6,15 +6,30 @@ import React from 'react';
 // import ConditionalRendering from './components/ToggleLogin';
 // import Department from './components/Department';
 // import Muidemo from './components/Muidemo';
-import List from './components/ListRendering';
+// import List from './components/ListRendering';
+// import FruitSurvey from './components/Day 4/Day 4 CE 1';
 // import './App.css';
+// import { WithProductList } from './components/Day 6/WithProductList';
+// import ProductList from './components/Day 6/ProductList';
+// const Products = [
+//   {id: 1, name: 'Item 1', price: 99.99, imageUrl: 'image/item1.jpg'},
+//   {id: 2, name: 'Item 2', price: 89.99, imageUrl: 'image/item2.jpg'},
+// ]
+// import Counter  from './components/Day 7/StateHook';
+// import SimpleForm from './components/Day 7/SimpleForm';
+// import  './App.css';
+// import ArrayObjects from  './components/Day 7/ArrayObjects';
+// import Axios from './components/Day 8/Axios';.
+// import Postaxios  from './components/Day 8/Postaxios';
+import Putaxios  from './components/Day 8/Putaxios';
+function App() {
 
-
-const App=()=>{
   return(
-    <div className='App-logo'>
-      <List />
-   </div>
+    <div  className="App">
+    <div className='App-header'>
+        <Putaxios />
+    </div>
+    </div>
   )
 }
 export default App;

@@ -22,9 +22,13 @@ function Signup() {
 
   return (
     <Container maxWidth="xs" className='login-container'>
-      <Box sx={{ marginTop: 8, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <Typography component="h2" variant="h5">
-          Sign Up to FreshCart
+      <Box sx={{ marginTop: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+        <Typography component="h2" variant="h4">
+
+          Sign Up to
+        </Typography>
+        <Typography component="h2" variant="h3" color="success" >
+          𝙁𝙧𝙚𝙨𝙝𝘾𝙖𝙧𝙩
         </Typography>
         <Box component="form" onSubmit={handleSignup} sx={{ mt: 1 }}>
           <TextField
