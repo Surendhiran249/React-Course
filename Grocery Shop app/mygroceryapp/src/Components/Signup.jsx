@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Add this if not already imported
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
 import './Login.css'
 
@@ -9,16 +10,32 @@ function Signup() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSignup = (e) => {
+
+  const handleSignup = async (e) => {
     e.preventDefault();
-    // Handle sign up logic here (e.g., API call)
-    if (password === confirmPassword) {
-      // Assume signup is successful, navigate to login
-      navigate('/login');
-    } else {
+    if (password !== confirmPassword) {
       alert('Passwords do not match!');
+      return;
+    }
+  
+    try {
+      // Make POST request to the backend to store user data
+      const response = await axios.post('http://localhost:5000/signup', { username, password });
+  
+      // If signup is successful, navigate to login
+      if (response.status === 201) {
+        alert('Signup successful!');
+        navigate('/login');
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 400) {
+        alert('Username already exists!');
+      } else {
+        console.error('Error during signup:', error);
+      }
     }
   };
+  
 
   return (
     <Container maxWidth="xs" className='login-container'>

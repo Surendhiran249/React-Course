@@ -10,9 +10,9 @@ function Homepage({ onAddToCart }) {
   const [products] = useState([
     { id: 1, name: 'Apple', price: 150, image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple-500x500.jpg' },
     { id: 2, name: 'Banana', price: 80, image: 'https://m.media-amazon.com/images/I/51ebZJ+DR4L.jpg' },
-    { id: 3, name: 'Orange', price: 130, image: 'https://www.shutterstock.com/shutterstock/photos/2053015835/display_1500/stock-photo-orange-with-sliced-and-green-leaves-isolated-on-white-background-2053015835.jpg' },
+    { id: 3, name: 'Orange', price: 130, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yz1d_OrZBKB6TIWRyUtCIPBIjgyDOpybxw&s' },
     { id: 4, name: '285g Cadbury Silk Chocolate', price: 600, image: 'https://m.media-amazon.com/images/I/51s2pkKOJRL.AC_SX250.jpg' },
-    { id: 5, name: 'Tata Salt, 1kg', price: 70, image: 'https://images-eu.ssl-images-amazon.com/images/I/61-zRoFrfqL._AC_UL165_SR165,165_.jpg' },
+    { id: 5, name: 'Tata Salt, 1kg', price: 70, image: 'https://m.media-amazon.com/images/I/61-zRoFrfqL.jpg' },
     { id: 6, name: 'Mr. Gold Refined Sunflower Oil Can, 5 L', price: 110, image: 'https://m.media-amazon.com/images/I/71k0TKsECpL._SY550_.jpg' },
     { id: 7, name: 'Bajaj Dry Fruits Premium Cranberries', price: 450, image: 'https://m.media-amazon.com/images/I/61sbawlFKDL._SX522_.jpg' },
     { id: 8, name: 'Healthy Dried Blueberry (200g)', price: 560, image: 'https://m.media-amazon.com/images/I/41yneT3mZ0L._SX522_.jpg' },

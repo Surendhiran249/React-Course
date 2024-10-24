@@ -9,13 +9,31 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Add login functionality here
-    console.log('Login button clicked');
-    navigate('/homepage');
+  
+    try {
+      const response = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+  
+      const data = await response.json();
+  
+      if (response.status === 200) {
+        console.log('Login successful:', data.message);
+        navigate('/homepage');  // Redirect to homepage on success
+      } else {
+        alert(data.message);  // Show error message if login fails
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
   };
-
+  
   const handleSignUp = (e) => {
     e.preventDefault();
     // Navigate to the signup page

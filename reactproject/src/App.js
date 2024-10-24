@@ -19,15 +19,16 @@ import React from 'react';
 // import SimpleForm from './components/Day 7/SimpleForm';
 // import  './App.css';
 // import ArrayObjects from  './components/Day 7/ArrayObjects';
-// import Axios from './components/Day 8/Axios';.
+import Axios from './components/Axios';
 // import Postaxios  from './components/Day 8/Postaxios';
-import Putaxios  from './components/Day 8/Putaxios';
+// import Putaxios  from './components/Putaxios';
+import FormValidation from './components/FormValidation';
 function App() {
 
-  return(
+return(
     <div  className="App">
     <div className='App-header'>
-        <Putaxios />
+        <Axios />
     </div>
     </div>
   )
