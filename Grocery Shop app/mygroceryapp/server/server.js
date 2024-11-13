@@ -37,6 +37,30 @@ app.post('/login', (req, res) => {
     res.status(200).json({ message: 'Login successful!' });
   });
   
+  // Route for submitting feedback
+app.post('/feedback', (req, res) => {
+  const { name, email, subject, message } = req.body;
+  
+  // Read existing feedback data
+  const feedback = JSON.parse(fs.readFileSync('./data/feedback.json'));
+  
+  // Add new feedback
+  const newFeedback = {
+    id: feedback.length + 1,
+    name,
+    email,
+    subject,
+    message,
+    timestamp: new Date().toISOString(),
+  };
+  
+  feedback.push(newFeedback);
+  
+  // Write updated feedback data back to the file
+  fs.writeFileSync('./data/feedback.json', JSON.stringify(feedback));
+  
+  res.status(201).json({ message: 'Feedback submitted successfully!' });
+});
 
 // Start server
 app.listen(5000, () => {
