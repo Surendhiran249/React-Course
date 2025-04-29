@@ -32,7 +32,3 @@ Contact Us: Get in touch with us for any inquiries.
 
 Credits :
 Me(Surendhiran): Developer and project maintainer.
-ChatGPT: Provided assistance and guidance in development.
-Google: For its powerful search engine used for research and resource discovery.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
